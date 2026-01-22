@@ -1,0 +1,9 @@
+# Dependencies
+web/node_modules/
+
+# Local build artifacts
+web/dist/
+
+# Project deliverables (students create these)
+projects/**/report.md
+projects/**/Dockerfile
