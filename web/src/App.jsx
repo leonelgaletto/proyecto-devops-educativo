@@ -31,8 +31,26 @@ const projects = [
     id: 'dockerize',
     title: 'Proyecto 02 · Dockerizá una app mínima',
     level: 'Principiante',
-    time: '45–60 min',
-    outcome: 'Vas a construir y correr una imagen, y entender qué se despliega.',
+    time: '30–45 min',
+    outcome: 'Vas a construir y correr una imagen, entendiendo puertos y contenedores.',
+    run: [
+      'git clone https://github.com/leonelgaletto/proyecto-devops-educativo.git',
+      'cd proyecto-devops-educativo/projects/02-dockerize-minimal',
+    ],
+    practice: [
+      'Crear un Dockerfile mínimo.',
+      'Build y run de contenedores.',
+      'Entender adentro vs afuera (puertos).',
+    ],
+    tools: ['Docker', 'Terminal'],
+    nextSteps: [
+      'docker --version',
+      'docker build -t devops-hello .',
+      'docker run --rm -p 8080:8080 devops-hello',
+      'abrí http://localhost:8080',
+      'bash scripts/verify.sh',
+      '(cuando termines) leé solution.md',
+    ],
   },
   {
     id: 'cicd',
